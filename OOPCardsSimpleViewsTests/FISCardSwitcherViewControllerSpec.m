@@ -7,7 +7,7 @@
 #import "KIF.h"
 #import "Swizzlean.h"
 
-SpecBegin(FISCardSwitcherViewController)
+SpecBegin (FISCardSwitcherViewController)
 
 describe(@"FISCardSwitcherViewController", ^{
     

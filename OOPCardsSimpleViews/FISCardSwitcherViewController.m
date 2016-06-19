@@ -4,6 +4,11 @@
 
 @interface FISCardSwitcherViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *topLeftLabel;
+@property (weak, nonatomic) IBOutlet UILabel *middleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *bottomLabel;
+
 @end
 
 @implementation FISCardSwitcherViewController
@@ -21,5 +26,32 @@
     self.tenOfHearts = [[FISCard alloc] initWithSuit:@"♥️"
                                                 rank:@"10"];
 }
+
+- (IBAction)threeOfSpadesTapped:(id)sender {
+    self.topLeftLabel.text = self.threeOfSpades.cardLabel;
+    self.middleLabel.text = self.threeOfSpades.cardLabel;
+    self.bottomLabel.text = self.threeOfSpades.cardLabel;
+}
+
+
+- (IBAction)fourOfClubsTapped:(id)sender {
+    self.topLeftLabel.text = self.fourOfClubs.cardLabel;
+    self.middleLabel.text = self.fourOfClubs.cardLabel;
+    self.bottomLabel.text = self.fourOfClubs.cardLabel;
+}
+
+- (IBAction)eightOfDiamondsTapped:(id)sender {
+    self.topLeftLabel.text = self.eightOfDiamonds.cardLabel;
+    self.middleLabel.text = self.eightOfDiamonds.cardLabel;
+    self.bottomLabel.text = self.eightOfDiamonds.cardLabel;
+}
+
+
+- (IBAction)tenOfHeartsTapped:(id)sender {
+    self.topLeftLabel.text = self.tenOfHearts.cardLabel;
+    self.middleLabel.text = self.tenOfHearts.cardLabel;
+    self.bottomLabel.text = self.tenOfHearts.cardLabel;
+}
+
 
 @end
